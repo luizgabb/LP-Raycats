@@ -9,3 +9,34 @@ body {
   min-height: 100vh;
   font-family: var(--font-family-sans);
 }
+
+.bg-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+
+  background: url("/efects/image.png") no-repeat center center;
+  background-size: cover;
+
+  animation: moveBackground 15s ease-in-out infinite;
+  filter: blur(20px);
+  opacity: 0.6;
+}
+
+@keyframes moveBackground {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(-10%, 10%) scale(1.05);
+  }
+  66% {
+    transform: translate(5%, -2%) scale(0.98);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
