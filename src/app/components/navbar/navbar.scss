@@ -103,3 +103,77 @@ h1:active {
   transform: scale(0.95);
 }
 
+#menu-check, .menu-button {
+  display: none;
+}
+
+@media (max-width: 950px) {
+
+  .logo, .nav-esq {
+    padding: 0 20px !important;
+  }
+
+  .menu-button {
+    display: block;
+    padding: 20px;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .hamburger, .hamburger::before, .hamburger::after {
+    content: '';
+    display: block;
+    background: white;
+    height: 3px;
+    width: 28px;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  .hamburger::before { margin-top: -8px; }
+  .hamburger::after { margin-top: 13px; }
+
+  .list {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background: #02081a;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    z-index: 1000;
+    transition: 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    border-left: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .list li {
+    font-size: 20px;
+    opacity: 1;
+  }
+
+  #menu-check:checked ~ .list {
+    right: 0;
+  }
+
+
+  #menu-check:checked ~ .menu-button .hamburger {
+    background: transparent;
+  }
+  #menu-check:checked ~ .menu-button .hamburger::before {
+    transform: rotate(45deg);
+    margin-top: 0;
+  }
+  #menu-check:checked ~ .menu-button .hamburger::after {
+    transform: rotate(-45deg);
+    margin-top: -3px;
+  }
+
+  .nav-esq {
+    order: 2;
+  }
+}
+

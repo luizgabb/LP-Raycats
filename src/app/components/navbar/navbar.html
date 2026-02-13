@@ -4,16 +4,42 @@
     <h1 class="title">Luiz Gabriel</h1>
   </div>
 
-    <ul class="list">
-      <li routerLink="">Sobre</li>
-      <li routerLink="">Projetos</li>
-      <li routerLink="">Tecnologias</li>
-      <li routerLink="">Experiência</li>
-      <li routerLink="">Educação</li>
-    </ul>
+@if (isMobile$ |async) {
+  <input type="checkbox" id="menu-check">
+  <label for="menu-check" class="menu-button">
+    <span class="hamburger"></span>
+  </label>
 
+  <ul class="list">
+    <li routerLink="">Sobre</li>
+    <li routerLink="">Projetos</li>
+    <li routerLink="">Tecnologias</li>
+    <li routerLink="">Experiência</li>
+    <li routerLink="">Educação</li>
     <div class="nav-esq">
       <div class="btn-download">Contato</div>
     </div>
+  </ul>
+
+} @else {
+  <input type="checkbox" id="menu-check">
+  <label for="menu-check" class="menu-button">
+    <span class="hamburger"></span>
+  </label>
+
+  <ul class="list">
+    <li routerLink="">Sobre</li>
+    <li routerLink="">Projetos</li>
+    <li routerLink="">Tecnologias</li>
+    <li routerLink="">Experiência</li>
+    <li routerLink="">Educação</li>
+  </ul>
+
+  <div class="nav-esq">
+    <div class="btn-download">Contato</div>
+  </div>
+
+}
+
 
 </div>
