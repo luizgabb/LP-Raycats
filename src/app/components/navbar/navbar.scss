@@ -18,6 +18,10 @@ img {
   padding: 0px 0px 0px 0px;
 }
 
+img:active {
+  transform: scale(0.95);
+}
+
 .title {
   display: flex;
   align-items: center;
@@ -58,6 +62,10 @@ h1 {
 
   font-weight: 600;
   font-size: 27px;
+}
+
+h1:active {
+  transform: scale(0.95);
 }
 
 

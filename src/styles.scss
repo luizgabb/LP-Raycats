@@ -22,7 +22,7 @@ body {
   background-size: cover;
 
   animation: moveBackground 15s ease-in-out infinite;
-  filter: blur(20px);
+  filter: blur(10px);
   opacity: 0.6;
 }
 
@@ -31,7 +31,7 @@ body {
     transform: translate(0, 0) scale(1);
   }
   33% {
-    transform: translate(-10%, 10%) scale(1.05);
+    transform: translate(-10%, 10%) scale(1.30);
   }
   66% {
     transform: translate(5%, -2%) scale(0.98);
