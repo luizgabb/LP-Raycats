@@ -73,7 +73,7 @@ h1:active {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 200px;
+  padding-right: 16% ;
   cursor: pointer;
 
 }
@@ -107,11 +107,12 @@ h1:active {
   display: none;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1233px) {
 
   .logo, .nav-esq {
     padding: 0 20px !important;
   }
+
 
   .menu-button {
     display: block;

@@ -14,7 +14,7 @@ export class Navbar {
   private BreakpointObserver = inject(BreakpointObserver)
 
   isMobile$ : Observable<boolean> = this.BreakpointObserver
-  .observe('max-width: 950px')
+  .observe('(max-width: 1233px)')
   .pipe(
     map(result =>result.matches),
     shareReplay()
