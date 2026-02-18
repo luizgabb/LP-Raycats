@@ -68,7 +68,6 @@ h1:active {
   transform: scale(0.95);
 }
 
-
 .nav-esq {
   display: flex;
   align-items: center;
@@ -113,7 +112,6 @@ h1:active {
     padding: 0 20px !important;
   }
 
-
   .menu-button {
     display: block;
     padding: 20px;
@@ -137,16 +135,20 @@ h1:active {
     position: fixed;
     top: 0;
     right: -100%;
+
     width: 280px;
     height: 100vh;
-    background: #02081a;
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     gap: 30px;
     margin: 0;
     padding: 0;
     z-index: 1000;
+
+    background: #02081a;
     transition: 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
     border-left: 1px solid rgba(255,255,255,0.1);
   }
@@ -159,7 +161,6 @@ h1:active {
   #menu-check:checked ~ .list {
     right: 0;
   }
-
 
   #menu-check:checked ~ .menu-button .hamburger {
     background: transparent;
