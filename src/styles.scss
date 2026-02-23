@@ -4,17 +4,29 @@
   --font-family-sans: 'Inter', sans-serif;
 }
 body {
+
   background-color: #02081a !important;
   margin: 0;
+  height: auto;
   min-height: 100vh;
   font-family: var(--font-family-sans);
-  overflow-x: hidden;
+  overflow-x:clip;
   padding: 0;
   max-width: 100%;
+  clip-path: inset(0);
+  contain: paint;
+  aspect-ratio: 16 /9;
+
+  //position: relative;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
 }
 
 .bg-animation {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -26,17 +38,18 @@ body {
 
   background: url("/efects/image.png") no-repeat center center;
   background-size: cover;
+  
 
   will-change: transform;
 
   animation: moveBackground 15s ease-in-out infinite;
-  overflow: hidden;
+  overflow: hidden; 
   opacity: 0.8;
 }
 
 @keyframes moveBackground {
   0%, 100% {
-    transform: scale(1.9) translate(0, 0);
+    transform: scale(1.4) translate(0, 0);
   }
   33% {
     transform: scale(1.5) translate(-2%, 3%);
