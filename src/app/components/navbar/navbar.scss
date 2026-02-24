@@ -25,6 +25,7 @@ img:active {
 .title {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .logo {
@@ -32,7 +33,6 @@ img:active {
   flex-direction: row;
   gap: 7px;
   padding: 0px 0px 0px 200px;
-  cursor: pointer;
 }
 
 .list {
@@ -73,8 +73,6 @@ h1:active {
   align-items: center;
   gap: 10px;
   padding-right: 16% ;
-  cursor: pointer;
-
 }
 
 .btn-download {
@@ -83,6 +81,8 @@ h1:active {
   height: 40px;
   align-items: center;
   justify-content: center;
+
+  cursor: pointer;
 
   border-radius: 13px;
   border: 2px solid transparent;
