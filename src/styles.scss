@@ -4,20 +4,21 @@
   --font-family-sans: 'Inter', sans-serif;
 }
 body {
+  font-family: var(--font-family-sans);
 
   background-color: #02081a !important;
+
+  padding: 0;
   margin: 0;
+
   height: auto;
   min-height: 100vh;
-  font-family: var(--font-family-sans);
-  overflow-x:clip;
-  padding: 0;
   max-width: 100%;
-  clip-path: inset(0);
-  contain: paint;
-  aspect-ratio: 16 /9;
 
-  //position: relative;
+  overflow-x:clip;
+  clip-path: inset(0);
+  aspect-ratio: 16 / 9;
+  contain: paint;
 }
 
 .content {
@@ -38,12 +39,11 @@ body {
 
   background: url("/efects/image.png") no-repeat center center;
   background-size: cover;
-  
 
   will-change: transform;
 
   animation: moveBackground 15s ease-in-out infinite;
-  overflow: hidden; 
+  overflow: hidden;
   opacity: 0.8;
 }
 
