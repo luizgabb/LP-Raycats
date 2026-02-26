@@ -1,0 +1,88 @@
+.tech-section {
+  text-align: center;
+  color: white;
+  padding: 60px 0;
+  overflow: hidden;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+}
+
+.slider {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  overflow: hidden;
+  background: transparent;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 150px;
+    height: 100%;
+    z-index: 2;
+  }
+
+  &::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(10, 10, 10, 1) 0%, rgba(10, 10, 10, 0) 100%);
+  }
+
+  &::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(10, 10, 10, 1) 0%, rgba(10, 10, 10, 0) 100%);
+  }
+}
+
+/* A "Esteira" */
+.slide-track {
+  display: flex;
+  align-items: center;
+  gap: 50px;          // Espaço entre cada tecnologia
+  width: max-content; // Importante: deixa a esteira esticar o quanto precisar
+
+  /* A animação: move do 0 até metade do tamanho total da esteira */
+  animation: scroll 20s linear infinite;
+
+}
+
+/* Os Itens individuais */
+.slide {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 1; // Fica 100% visível no hover
+  }
+
+  img {
+    height: 40px; // Altura padrão para as logos não ficarem bagunçadas
+    width: auto;
+  }
+
+  span {
+    font-size: 20px;
+    font-weight: 500;
+    white-space: nowrap; // Impede que o texto quebre de linha
+  }
+}
+
+/* A Animação em si */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Como dobramos os itens, mover -50% faz o loop perfeito */
+    transform: translateX(calc(-50% - 25px));
+    /* O -25px ajusta a metade do 'gap' para não dar um tranco no final */
+  }
+}

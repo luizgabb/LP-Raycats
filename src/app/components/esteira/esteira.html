@@ -1,0 +1,23 @@
+<div class="tech-section">
+  <h2>Confira minhas tecnologias e ferramentas</h2>
+
+  <div class="slider">
+    <div class="slide-track">
+
+      @for (tech of techs; track tech.nome) {
+        <div class="slide">
+          <img [src]="tech.logo" [alt]="tech.nome">
+          <span>{{ tech.nome }}</span>
+        </div>
+      }
+
+      @for (tech of techs; track tech.nome) {
+        <div class="slide">
+          <img [src]="tech.logo" [alt]="tech.nome">
+          <span>{{ tech.nome }}</span>
+        </div>
+      }
+
+    </div>
+  </div>
+</div>
