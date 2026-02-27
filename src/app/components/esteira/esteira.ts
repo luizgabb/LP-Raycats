@@ -7,12 +7,17 @@ import { Component } from '@angular/core';
   styleUrl: './esteira.scss',
 })
 export class Esteira {
-
   techs = [
-    { nome: 'Angular', logo: 'assets/logos/angular.svg' },
-    { nome: 'TypeScript', logo: 'assets/logos/typescript.svg' },
-    { nome: 'Sass', logo: 'assets/logos/sass.svg' },
-    { nome: 'Node.js', logo: 'assets/logos/node.svg' },
-    { nome: 'Figma', logo: 'assets/logos/figma.svg' },
+    { nome: 'Angular', logo: '/svg/Angular.svg' },
+    { nome: 'TypeScript', logo: '/svg/TypeScript.svg' },
+    { nome: 'Node.js', logo: '/svg/Node.js.svg' },
+    { nome: 'Html', logo: '/svg/HTML5.svg' },
+    { nome: 'Css', logo: '/svg/CSS3.svg' },
+    { nome: 'Sass', logo: '/svg/Sass.svg' },
+    { nome: 'Java', logo: '/svg/Java.svg' },
+    { nome: 'Spring', logo: '/svg/Spring.svg' },
+    { nome: 'Aws', logo: '/svg/AWS.svg' },
+    { nome: 'MySql', logo: '/svg/MySQL.svg' },
+    { nome: 'Postgres', logo: '/svg/PostgresSQL.svg' },
   ];
 }

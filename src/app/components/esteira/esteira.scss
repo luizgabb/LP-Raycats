@@ -1,14 +1,58 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .tech-section {
   text-align: center;
   color: white;
   padding: 60px 0;
   overflow: hidden;
+  margin-top: 300px;
+  margin-bottom: 0;
 
   h2 {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 40px;
+    font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 3px;
   }
+
+   animation: fadeInUp 1.5s ease-out forwards;
+}
+
+.stack {
+   width: 10%;
+  height: 18px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 10px;
+  gap: 10px;
+
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 53px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+
+  & p {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-indent: 5px;
+    line-height: 16px;
+  }
+}
+
+.stack:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .slider {
@@ -39,19 +83,16 @@
   }
 }
 
-/* A "Esteira" */
 .slide-track {
   display: flex;
   align-items: center;
-  gap: 50px;          // Espaço entre cada tecnologia
-  width: max-content; // Importante: deixa a esteira esticar o quanto precisar
+  gap: 50px;
+  width: max-content;
 
-  /* A animação: move do 0 até metade do tamanho total da esteira */
-  animation: scroll 20s linear infinite;
+  animation: scroll 30s linear infinite;
 
 }
 
-/* Os Itens individuais */
 .slide {
   display: flex;
   align-items: center;
@@ -60,29 +101,26 @@
   transition: opacity 0.3s ease;
 
   &:hover {
-    opacity: 1; // Fica 100% visível no hover
+    opacity: 1;
   }
 
   img {
-    height: 40px; // Altura padrão para as logos não ficarem bagunçadas
+    height: 40px;
     width: auto;
   }
 
   span {
     font-size: 20px;
     font-weight: 500;
-    white-space: nowrap; // Impede que o texto quebre de linha
+    white-space: nowrap;
   }
 }
 
-/* A Animação em si */
 @keyframes scroll {
   0% {
     transform: translateX(0);
   }
   100% {
-    /* Como dobramos os itens, mover -50% faz o loop perfeito */
     transform: translateX(calc(-50% - 25px));
-    /* O -25px ajusta a metade do 'gap' para não dar um tranco no final */
   }
 }
