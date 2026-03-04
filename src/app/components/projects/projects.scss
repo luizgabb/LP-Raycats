@@ -232,3 +232,20 @@
 .proj-descricao:hover {
   opacity: 1;
 }
+
+img {
+  display: block!important;
+  width: 500px;
+  height: auto;
+  border: 1px solid red($color: #eb0a0a);
+  border-radius: 12px
+}
+
+.img-2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+
+
+}

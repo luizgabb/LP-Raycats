@@ -8,4 +8,15 @@ import { Component } from '@angular/core';
 })
 export class Projects {
 
+  public ProjectActive: number | null = null;
+
+  OneProject(): any {
+    this.ProjectActive = 1;
+  }
+  TwoProject(): any {
+    this.ProjectActive = 2;
+  }
+  TreeProject(): any{
+    this.ProjectActive = 3
+  }
 }

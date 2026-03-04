@@ -10,20 +10,38 @@
   </p>
   <img class="luz" src="/png/luz.png" alt="">
   <div class="projects-container">
-    <div class="projects-view"></div>
+    <div class="projects-view">
+
+      @if (ProjectActive === 1) {
+        <div class="img-2">
+          <img src="/png/proj-1-deploy.png" alt="">
+          <img src="/png/proj-1-code.png" alt="">
+        </div>
+      }
+      @else if (ProjectActive === 2) {
+        <img class="img-0" src="/png/proj-2-code.png" alt="">
+      }
+       @else if (ProjectActive === 3) {
+        <img class="img-1" src="/png/proj-3-deploy.png" alt="">
+        <img class="img-2" src="/png/prof-3-code.png" alt="">
+      }
+      @else {
+        <h1>Jesus Salva</h1>
+      }
+    </div>
 
     <div class="list-projects">
-      <div class="project-1">
+      <div class="project-1" (click)=OneProject()>
         <div class="project-icon"> <i class="ph ph-certificate"></i></div>
         <h1 class="project-title">Gerador de Certificados</h1>
         <p class="proj-descricao">Este é um gerador de certificados desenvolvido em Angular que permite criar e baixar certificados personalizados de forma simples e eficiente.</p>
       </div>
-      <div class="project-2">
+      <div class="project-2" (click)=TwoProject()>
         <div class="project-icon"> <i class="ph ph-envelope"></i></div>
         <h1 class="project-title">Email Service</h1>
         <p class="proj-descricao">Este projeto é uma API construída usando Java, Java Spring e AWS Simple Email Service.</p>
       </div>
-      <div class="project-3">
+      <div class="project-3" (click)=TreeProject()>
         <div class="project-icon"> <i class="ph ph-barbell"></i></div>
         <h1 class="project-title">Desafio Smartfit</h1>
         <p class="proj-descricao">solução para o desafio de Front-end da Smart Fit . Eu utilizei o framework Angular para desenvolver a aplicação.</p>
