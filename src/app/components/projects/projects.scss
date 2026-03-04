@@ -127,6 +127,13 @@
   -webkit-backdrop-filter: blur(12px);
 
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  cursor: pointer;
+}
+.project-1:hover {
+  border: solid 1px white;
+}
+.project-1:active {
+  transform: scale(0.95);
 }
 
 .project-2 {
@@ -144,6 +151,13 @@
   -webkit-backdrop-filter: blur(12px);
 
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  cursor: pointer;
+}
+.project-2:hover {
+  border: solid 1px white;
+}
+.project-2:active {
+  transform: scale(0.95);
 }
 
 .project-3 {
@@ -161,6 +175,13 @@
   -webkit-backdrop-filter: blur(12px);
 
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  cursor: pointer;
+}
+.project-3:hover {
+  border: solid 1px white;
+}
+.project-3:active {
+  transform: scale(0.95);
 }
 
 .project-icon {
