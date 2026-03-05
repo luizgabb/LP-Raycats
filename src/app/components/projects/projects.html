@@ -14,19 +14,37 @@
 
       @if (ProjectActive === 1) {
         <div class="img-2">
-          <img src="/png/proj-1-deploy.png" alt="">
-          <img src="/png/proj-1-code.png" alt="">
+          <a href="https://beautiful-khapse-5280bc.netlify.app/" target="_blank">
+            <img  class="p1" src="/png/proj-1-deploy.png" alt="">
+          </a>
+          <a href="https://github.com/luizgabb/gerador_certificado-angular" target="_blank">
+            <img class="p15" src="/png/proj-1-code.png" alt="">
+          </a>
         </div>
       }
       @else if (ProjectActive === 2) {
-        <img class="img-0" src="/png/proj-2-code.png" alt="">
+        <a href="https://github.com/luizgabb/email-service" target="_blank">
+          <img class="img-0" src="/png/proj-2-code.png" alt="">
+        </a>
       }
        @else if (ProjectActive === 3) {
-        <img class="img-1" src="/png/proj-3-deploy.png" alt="">
-        <img class="img-2" src="/png/prof-3-code.png" alt="">
-      }
-      @else {
-        <h1>Jesus Salva</h1>
+        <div class="img-2">
+          <a href="https://desafio-frontend-smartfit-seven.vercel.app/" target="_blank">
+            <img class="p3" src="/png/proj-3-deploy.png" alt="">
+          </a>
+          <a href="https://github.com/luizgabb/desafio-frontend-smartfit" target="_blank">
+            <img class="p35" src="/png/prof-3-code.png" alt="">
+          </a>
+        </div>
+      } @else {
+        <div class="img-2">
+          <a href="https://beautiful-khapse-5280bc.netlify.app/" target="_blank">
+            <img  class="p1" src="/png/proj-1-deploy.png" alt="">
+          </a>
+          <a href="https://github.com/luizgabb/gerador_certificado-angular" target="_blank">
+            <img class="p15" src="/png/proj-1-code.png" alt="">
+          </a>
+        </div>
       }
     </div>
 
