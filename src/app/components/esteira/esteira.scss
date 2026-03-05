@@ -14,7 +14,7 @@
   color: white;
   padding: 60px 0;
   overflow: hidden;
-  margin-top: 300px;
+  margin-top: 20px;
   margin-bottom: 0;
 
   h2 {
@@ -75,12 +75,10 @@
 
   &::before {
     left: 0;
-    background: linear-gradient(to right, rgba(10, 10, 10, 1) 0%, rgba(10, 10, 10, 0) 100%);
   }
 
   &::after {
     right: 0;
-    background: linear-gradient(to left, rgba(10, 10, 10, 1) 0%, rgba(10, 10, 10, 0) 100%);
   }
 }
 
@@ -98,12 +96,8 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  opacity: 0.7;
+  opacity: 1;
   transition: opacity 0.3s ease;
-
-  &:hover {
-    opacity: 1;
-  }
 
   img {
     height: 40px;
@@ -129,5 +123,13 @@
 @media (max-width:1233px) {
   .slider {
     max-width: 80%;
+  }
+
+  .stack {
+    width: 20%;
+  }
+
+  .tech-section {
+    margin-top: 0px;
   }
 }

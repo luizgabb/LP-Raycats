@@ -13,4 +13,12 @@ import { Esteira } from "./components/esteira/esteira";
 })
 export class App {
   protected readonly title = signal('Portifolio');
+
+  ngOnInit() {
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
+  }
 }
+
