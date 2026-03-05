@@ -7,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrl: './main.scss',
 })
 export class Main {
-
+  scrollToProjects() {
+    const element = document.getElementById('session');
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  }
 }
